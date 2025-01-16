@@ -48,12 +48,36 @@ Excel file should contain the following columns:
 - L0: 顶层节点 | Top level nodes
 - L1-L6: 子层级节点 | Sub-level nodes
 
-示例 | Example:
+### 示例数据 | Sample Data
+
+项目包含示例数据供测试：
+The project includes sample data for testing:
+
+1. 位置 | Location: `sample_data/sample.xlsx`
+2. 生成脚本 | Generator Script: `scripts/generate_sample.py`
+
+运行示例 | Run Example:
+```bash
+# 使用pnpm安装依赖 | Install dependencies with pnpm
+pnpm install
+
+# 启动开发服务器 | Start dev server
+pnpm dev
+
+# 使用示例数据测试 | Test with sample data
+1. 打开 http://localhost:5173
+2. 上传 sample_data/sample.xlsx
+3. 查看生成的流程图
 ```
-L0        | L1          | L2
-部门      | 子部门      | 团队
-Department| Sub-dept    | Team
-```
+
+### Draw.io导出说明 | Draw.io Export Notes
+
+虽然使用ReactFlow绘制流程图，但提供Draw.io导出功能是为了：
+While we use ReactFlow for visualization, Draw.io export is provided for:
+
+1. 与Draw.io编辑器的兼容性 | Compatibility with Draw.io editor
+2. 后续编辑和修改 | Further editing and modifications
+3. 团队协作支持 | Team collaboration support
 
 ## 技术栈 | Tech Stack
 
